@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abacus"
+version = "0.1.0"
+description = "算盘读数练习纸：把数字画成算盘，生成可打印的 A4 练习与答案"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "abacus", "suanpan", "math", "worksheet", "printable"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+abacus = "abacus.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/abacus"
+Source = "https://github.com/eastyou/abacus"
+
+[tool.setuptools]
+packages = ["abacus"]
